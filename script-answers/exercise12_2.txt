@@ -1,0 +1,10 @@
+Script started on 2023-06-30 14:45:47+08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="81" LINES="18"]
+[?2004h]0;pongbao@ZT-LEGION5-PRO: /mnt/c/Users/torre/OneDrive/Documents/Web and Software Development/Full Stack Open/part12-containers-applications[01;32mpongbao@ZT-LEGION5-PRO[00m:[01;34m/mnt/c/Users/torre/OneDrive/Documents/Web and Software Development/Full Stack Open/part12-containers-applications[00m$ docker container run -it ubuntu bash
+[?2004l[?2004h]0;root@1bf3b612a053: /root@1bf3b612a053:/# mkdr ir /usr/src/app
+[?2004l[?2004h]0;root@1bf3b612a053: /root@1bf3b612a053:/# touch /usr/src/app/index.js
+[?2004l[?2004h]0;root@1bf3b612a053: /root@1bf3b612a053:/# [Kexit
+[?2004lexit
+[?2004h]0;pongbao@ZT-LEGION5-PRO: /mnt/c/Users/torre/OneDrive/Documents/Web and Software Development/Full Stack Open/part12-containers-applications[01;32mpongbao@ZT-LEGION5-PRO[00m:[01;34m/mnt/c/Users/torre/OneDrive/Documents/Web and Software Development/Full Stack Open/part12-containers-applications[00m$ exit
+[?2004lexit
+
+Script done on 2023-06-30 14:46:21+08:00 [COMMAND_EXIT_CODE="0"]
