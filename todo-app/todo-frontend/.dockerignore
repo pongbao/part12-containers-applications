@@ -1,2 +1,5 @@
 .gitignore
 build/
+Dockerfile
+*.Dockerfile
+node_modules
