@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  app-prod:
+    image: todo-front-prod
+    build:
+      context: . # The context will pick this directory as the "build context"
+      dockerfile: Dockerfile # This will simply tell which dockerfile to read
+    ports:
+      - 3000:80
+    container_name: todo-front-prod # This will name the container hello-front-dev
