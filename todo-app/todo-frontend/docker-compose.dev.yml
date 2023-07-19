@@ -1,5 +1,7 @@
+version: "3.8"
+
 services:
-  app:
+  app-dev:
     image: todo-front-dev
     build:
       context: . # The context will pick this directory as the "build context"
