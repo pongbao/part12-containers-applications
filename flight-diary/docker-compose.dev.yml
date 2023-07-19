@@ -1,0 +1,26 @@
+services:
+  app-dev:
+    image: flight-diary-front-dev
+    build: .
+    volumes:
+      - ./flight-diary-frontend:/usr/src/app
+
+  debug-helper:
+    image: busybox
+
+  server-dev:
+    image: flight-diary-back-dev
+    build: .
+    volumes:
+      - ./flight-diary-backend:/app
+
+  nginx-dev:
+    image: nginx:1.20.1
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro # ro means read only
+    ports:
+      - 8080:80
+    container_name: flight-diary-dev-reverse-proxy
+    depends_on:
+      - app-dev # wait for the frontend container to be started
+      - server-dev

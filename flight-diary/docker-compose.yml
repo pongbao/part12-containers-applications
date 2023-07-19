@@ -1,0 +1,19 @@
+services:
+  app-prod:
+    image: flight-diary-front-prod
+    build: .
+
+  server-prod:
+    image: flight-diary-back-prod
+    build: .
+
+  nginx-prod:
+    image: nginx:1.20.1
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro # ro means read only
+    ports:
+      - 8080:80
+    container_name: flight-diary-reverse-proxy
+    depends_on:
+      - app-prod # wait for the frontend container to be started
+      - server-prod

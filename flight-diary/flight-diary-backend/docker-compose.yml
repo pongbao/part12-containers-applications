@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  server-prod: # The name of the service, can be anything
+    image: flight-diary-back-prod # Declares which image to use
+    build:
+      context: . # Declares where to build if image is not found
+      dockerfile: Dockerfile
+    ports: # Declares the ports to publish
+      - 3001:3001

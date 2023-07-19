@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  server-dev: # The name of the service, can be anything
+    image: flight-diary-back-dev # Declares which image to use
+    build:
+      context: . # Declares where to build if image is not found
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./:/app
+    ports: # Declares the ports to publish
+      - 3001:3001
+
+  debug-helper:
+    image: busybox

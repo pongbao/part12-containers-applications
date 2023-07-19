@@ -2,8 +2,6 @@ services:
   app-prod:
     image: todo-front-prod
     build: .
-  debug-helper:
-    image: busybox
 
   server-prod:
     image: todo-back-prod

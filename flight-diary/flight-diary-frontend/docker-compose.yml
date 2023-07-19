@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  app-prod:
+    image: flight-diary-front-prod
+    build:
+      context: . # The context will pick this directory as the "build context"
+      dockerfile: Dockerfile # This will simply tell which dockerfile to read
+    ports:
+      - 3000:80
+    container_name: flight-diary-front-prod # This will name the container hello-front-dev
+
+  debug-helper:
+    image: busybox
